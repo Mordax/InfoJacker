@@ -126,7 +126,8 @@ const RootStack = createStackNavigator(
   {
   Home: App,
   First: { screen: Begin.begin },
-  Second: { screen: Begin.arc1 }
+  Second: { screen: Begin.arc1 },
+  Third: { screen: Begin.arc2 }
   },
   {
     initialRouteName: 'Home',

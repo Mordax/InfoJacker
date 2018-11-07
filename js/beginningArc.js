@@ -63,6 +63,38 @@ export class arc1 extends React.Component {
 
       <AwesomeButton
           onPress={() => {
+            this.props.navigation.navigate('Third')
+          }}
+        backgroundColor="#7B8C93"
+        backgroundDarker="#484848"
+        width= {90}
+        height={40}
+        >
+        ->
+      </AwesomeButton>
+
+      </View>
+    );
+  }
+}
+
+export class arc2 extends React.Component {
+  render(){
+    return(
+      <View style={styles.container}>
+
+      <Image source={require('../img/jay.png')} style={{  height: 200}}/>
+
+      <Text style={{color: '#fff', letterSpacing: 0.5 , margin: 20}}>
+      I’m a pirate of knowledge. I believe information flows freely. That to stem information is to stem the wind that blows, the world that turns, the life that is born. 
+      {"\n\n"}
+      You may wonder how can you access information if it’s so bottled up and censored. Wretched humans always find a way to break open a door.
+      {"\n\n"}
+      Remember dear reader, the Internet is the great equalizer of mankind.
+      </Text>
+
+      <AwesomeButton
+          onPress={() => {
             Alert.alert('Option 2');
           }}
         backgroundColor="#7B8C93"
