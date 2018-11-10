@@ -9,6 +9,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: '#fff', letterSpacing: 0.5 , margin: 20,
+  },
 });
 
 module.exports = styles;

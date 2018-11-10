@@ -72,7 +72,10 @@ const RootStack = createStackNavigator(
   First: { screen: Begin.begin },
   Second: { screen: Begin.arc1 },
   Third: { screen: Begin.arc2 },
-  Fourth: {screen: Begin.arc3 }
+  Fourth: {screen: Begin.arc3 },
+  Fifth: {screen: Begin.arc4_1},
+  Sixth: {screen: Begin.arc5_1},
+  Seventh: {screen: Begin.arc6}
   },
   {
     initialRouteName: 'Home',
