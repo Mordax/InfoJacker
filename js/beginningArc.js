@@ -5,8 +5,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button, Alert, Image, AppRegistry, BackHandler, Animated, Easing } from 'react-native';
-import AwesomeButton from 'react-native-really-awesome-button';
-
 
 import styles from '../styles/styles.js';
 
@@ -27,17 +25,13 @@ export class begin extends React.Component {
         Isn’t it ironic how humans always manage to squander the most precious of gifts? {"\n\n"}
         </Text>
 
-          <AwesomeButton
+          <Button
               onPress={() => {
                 this.props.navigation.navigate('Second')
               }}
-            backgroundColor="#7B8C93"
-            backgroundDarker="#484848"
-            width= {90}
-            height={40}
-            >
-            ->
-          </AwesomeButton>
+            color="#7B8C93"
+            title="->"
+           />
 
 
         </View>
@@ -61,17 +55,13 @@ export class arc1 extends React.Component {
       {"\n\n"}
       </Text>
 
-      <AwesomeButton
-          onPress={() => {
-            this.props.navigation.navigate('Third')
-          }}
-        backgroundColor="#7B8C93"
-        backgroundDarker="#484848"
-        width= {90}
-        height={40}
-        >
-        ->
-      </AwesomeButton>
+      <Button
+              onPress={() => {
+                this.props.navigation.navigate('Third')
+              }}
+            color="#7B8C93"
+            title="->"
+           />
 
       </View>
     );
@@ -83,7 +73,7 @@ export class arc2 extends React.Component {
     return(
       <View style={styles.container}>
 
-      <Image source={require('../img/jay.png')} style={{  height: 200}}/>
+      <Image source={require('../img/jay.png')} style={{  height: 230}}/>
 
       <Text style={{color: '#fff', letterSpacing: 0.5 , margin: 20}}>
       I’m a pirate of knowledge. I believe information flows freely. That to stem information is to stem the wind that blows, the world that turns, the life that is born. 
@@ -93,19 +83,51 @@ export class arc2 extends React.Component {
       Remember dear reader, the Internet is the great equalizer of mankind.
       </Text>
 
-      <AwesomeButton
+      <Button
           onPress={() => {
-            Alert.alert('Option 2');
+            this.props.navigation.navigate('Fourth')
           }}
-        backgroundColor="#7B8C93"
-        backgroundDarker="#484848"
-        width= {90}
-        height={40}
-        >
-        ->
-      </AwesomeButton>
+          color="#7B8C93"
+          title="->"
+      />
 
       </View>
     );
   }
 }
+
+export class arc3 extends React.Component {
+  render(){
+    return(
+      <View style={styles.container}>
+
+      <Image source={require('../img/1.png')} style={{  height: 230}}/>
+
+      <Text style={{color: '#fff', letterSpacing: 0.5 , margin: 20}}>
+      ....
+      {"\n\n"}
+      You find yourself in a dilapidated hall.
+      {"\n\n"}
+      Which way do you wish to go?
+      </Text>
+
+      <Button
+          onPress={() => {
+            Alert.alert('Option 2');
+          }}
+          color="#7B8C93"
+          title="Forward"
+      />
+      <Button
+          onPress={() => {
+            Alert.alert('Option 2');
+          }}
+          color="#7B8C93"
+          title="Right"
+      />
+
+      </View>
+    );
+  }
+}
+
