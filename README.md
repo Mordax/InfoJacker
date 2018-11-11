@@ -9,7 +9,9 @@ If running into a wall running on expo, try `exp start --tunnel` to make sure th
 
 -----
 
-Made for Github's [GameOff 2018](https://itch.io/jam/game-off-2018). Expo link [here](https://expo.io/@mordax/infojacker). 
+Made for Github's [GameOff 2018](https://itch.io/jam/game-off-2018). 
+
+Expo link [here](https://expo.io/@mordax/infojacker). Itch.io link [here](https://m0rdax.itch.io/infojacker).
 
 Gigantic work in progress due to the development environment constantly breaking on me. Logo is accidentally unseeable, will be fixed later.
 
