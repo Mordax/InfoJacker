@@ -30,7 +30,7 @@ export class begin extends React.Component {
                 this.props.navigation.navigate('Second')
               }}
             color="#7B8C93"
-            title="->"
+            title="Continue"
            />
 
 
@@ -41,7 +41,7 @@ export class begin extends React.Component {
 }
 
 
-export class arc1 extends React.Component {
+export class barc1 extends React.Component {
   render(){
     return(
       <View style={styles.container}>
@@ -51,7 +51,7 @@ export class arc1 extends React.Component {
       <Text style={styles.text}>
       Where there’s hopelessness, there’s people willing to pay good money for hope.
       {"\n\n"}
-      And that’s where I come in.
+      And that’s where the Infojackers come in.
       {"\n\n"}
       </Text>
 
@@ -60,7 +60,7 @@ export class arc1 extends React.Component {
                 this.props.navigation.navigate('Third')
               }}
             color="#7B8C93"
-            title="->"
+            title="Continue"
            />
 
       </View>
@@ -68,20 +68,20 @@ export class arc1 extends React.Component {
   }
 }
 
-export class arc2 extends React.Component {
+export class barc2 extends React.Component {
   render(){
     return(
       <View style={styles.container}>
 
-      <Image source={require('../img/cyber.png')} style={{  height: 230}}/>
+      <Image source={require('../img/infojacker.png')} style={{  height: 190, width: 350}}/>
 
       <Text style={styles.text}>
 
-      I’m a pirate of knowledge. I believe information flows freely. That to stem information is to stem the wind that blows, the world that turns, the life that is born. 
+      Pirates of knowledge, they believe that information flows freely. That to stem information is to stem the wind that blows, the world that turns, the life that is born. 
       {"\n\n"}
-      You may wonder how can you access information if it’s so bottled up and censored. Wretched humans always find a way to break open a door.
+      You may wonder how can they can access any information if it’s so bottled up and censored. Humans always find a way to break open a door.
       {"\n\n"}
-      Remember dear reader, the Internet is the great equalizer of mankind.
+      Remember dear reader, the Mesh is the great equalizer of mankind.
       </Text>
 
       <Button
@@ -89,7 +89,7 @@ export class arc2 extends React.Component {
             this.props.navigation.navigate('Fourth')
           }}
           color="#7B8C93"
-          title="->"
+          title="Continue"
       />
 
       </View>
@@ -97,7 +97,7 @@ export class arc2 extends React.Component {
   }
 }
 
-export class arc3 extends React.Component {
+export class barc3 extends React.Component {
   render(){
     return(
       <View style={styles.container}>
@@ -121,7 +121,7 @@ export class arc3 extends React.Component {
       />
       <Button
           onPress={() => {
-            Alert.alert('Not coded yet');
+            this.props.navigation.navigate('Eighth')
           }}
           color="#7B8C93"
           title="Right"
@@ -132,7 +132,7 @@ export class arc3 extends React.Component {
   }
 }
 
-export class arc4_1 extends React.Component {
+export class barc4_1 extends React.Component {
   render(){
     return(
       <View style={styles.container}>
@@ -174,7 +174,7 @@ export class arc4_1 extends React.Component {
   }
 }
 
-export class arc5_1 extends React.Component {
+export class barc5_1 extends React.Component {
   render(){
     return(
       <View style={styles.container}>
@@ -200,7 +200,7 @@ export class arc5_1 extends React.Component {
             this.props.navigation.navigate('Seventh')
           }}
           color="#7B8C93"
-          title="Right"
+          title="Continue"
       />
 
       </View>
@@ -208,7 +208,7 @@ export class arc5_1 extends React.Component {
   }
 }
 
-export class arc6 extends React.Component {
+export class barc6 extends React.Component {
   render(){
     return(
       <View style={styles.container}>
@@ -222,7 +222,9 @@ export class arc6 extends React.Component {
       {"\n\n"}
       You can access the Mesh to match photos, sound bites and other forms of data collection to real world people, events and other useful information.
       {"\n\n"}
-      +1 Infoscrip
+        <Text style={{color: 'purple'}}>
+        +1 Infoscrip
+        </Text>
       </Text>
 
       <Button
@@ -231,6 +233,62 @@ export class arc6 extends React.Component {
           }}
           color="#7B8C93"
           title="Continue"
+      />
+
+      </View>
+    );
+  }
+}
+
+export class barc4_2 extends React.Component {
+  render(){
+    return(
+      <View style={styles.container}>
+
+      <Image source={require('../img/apart.png')} style={{ height: 230, width: 400}}/>
+
+      <Text style={styles.text}>
+      Your current abode.
+      {"\n\n"}
+      The only affordable place you could find.
+      {"\n\n"}
+      Thankfully your reputation precedes you and no one has tried breaking in yet.
+      </Text>
+
+      <Button
+          onPress={() => {
+            this.props.navigation.navigate('Ninth')
+          }}
+          color="#7B8C93"
+          title="Continue"
+      />
+
+      </View>
+    );
+  }
+}
+
+export class barc4_3 extends React.Component {
+  render(){
+    return(
+      <View style={styles.container}>
+
+      <Image source={require('../img/corner.png')} style={{  height: 350, width: 400}}/>
+
+      <Text style={styles.text}>
+      Walking towards the corner of your room, you notice a vacuum tube deposit.
+      {"\n\n"}
+      Your organization has delivered you new instructions.
+      {"\n\n"}
+      'Clone an upper level key card. Reward: 10 c-chips.'
+      </Text>
+
+      <Button
+          onPress={() => {
+            Alert.alert('Not coded yet');
+          }}
+          color="#7B8C93"
+          title="Leave"
       />
 
       </View>

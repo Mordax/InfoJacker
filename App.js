@@ -6,9 +6,8 @@ import { createStackNavigator, NavigationActions, StackNavigator} from 'react-na
 import styles from './styles/styles.js';
 var Begin = require('./js/beginningArc.js');
 
-//I'll use this as a starting page
 class App extends React.Component {
-  componentDidMount() {
+  /* componentDidMount() {
     BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
   }
 
@@ -18,7 +17,7 @@ class App extends React.Component {
 
   handleBackButton() {
     return true;
-  }
+  } */
 
 
   render() {
@@ -29,29 +28,22 @@ class App extends React.Component {
       <View>
         <Image source={require('./img/info.png')} style={{  height: 200 }}/>
       </View>
-
-      <View>
-        <Text style={{color: '#fff'}}>
-          Infojacker
-        </Text>
-      </View>
-
-      <Button
-          onPress={() => {
-            this.props.navigation.navigate('First')
-          }}
-        color="#7B8C93"
-        title="START"
-        />
-
-      <View>
-        <Button
+      
+      <View style={{flexDirection: "row"}}>
+        <Button 
             onPress={() => {
-              Alert.alert('Option 2');
+              this.props.navigation.navigate('First')
             }}
           color="#7B8C93"
-          title="SETTINGS"
+          title="START"
           />
+          <Button
+              onPress={() => {
+                Alert.alert('Image credits: Liam Reid and Greg Girard.');
+              }}
+            color="#7B8C93"
+            title="SETTINGS"
+            />
       </View>
 
       </View>
@@ -70,12 +62,14 @@ const RootStack = createStackNavigator(
   {
   Home: App,
   First: { screen: Begin.begin },
-  Second: { screen: Begin.arc1 },
-  Third: { screen: Begin.arc2 },
-  Fourth: {screen: Begin.arc3 },
-  Fifth: {screen: Begin.arc4_1},
-  Sixth: {screen: Begin.arc5_1},
-  Seventh: {screen: Begin.arc6}
+  Second: { screen: Begin.barc1 },
+  Third: { screen: Begin.barc2 },
+  Fourth: {screen: Begin.barc3 },
+  Fifth: {screen: Begin.barc4_1},
+  Sixth: {screen: Begin.barc5_1},
+  Seventh: {screen: Begin.barc6},
+  Eighth: {screen: Begin.barc4_2},
+  Ninth:{screen: Begin.barc4_3}
   },
   {
     initialRouteName: 'Home',
